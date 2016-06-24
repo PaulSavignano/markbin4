@@ -1,8 +1,13 @@
 import React from 'react'
 
-const App = () => {
+import Header from './header'
+
+const App = (props) => {
   return (
-    <div>App</div>
+    <div>
+      <Header />
+      {props.children}
+    </div>
   )
 }
 
